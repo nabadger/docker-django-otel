@@ -1,0 +1,23 @@
+[
+{
+  "model": "app.string",
+  "pk": 1,
+  "fields": {
+    "string": "Test 1"
+  }
+},
+{
+  "model": "app.string",
+  "pk": 2,
+  "fields": {
+    "string": "Test 2"
+  }
+},
+{
+  "model": "app.string",
+  "pk": 3,
+  "fields": {
+    "string": "Test 3"
+  }
+}
+]

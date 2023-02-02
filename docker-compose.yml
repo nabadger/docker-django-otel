@@ -1,0 +1,18 @@
+version: "3.7"
+services:
+  webapp:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
+  db:
+    image: mysql
+    command: --default-authentication-plugin=mysql_native_password --general-log=1 --general-log-file=/var/log/mysql/general
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: djangodb
+      MYSQL_USER: djangouser
+      MYSQL_PASSWORD: djangopassword
